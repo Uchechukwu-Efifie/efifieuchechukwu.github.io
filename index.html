@@ -52,7 +52,7 @@
   <main>
     <article class="container">
 
-    <section class="hero" id="home" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 20px 40px 20px; min-height: 100vh; justify-content: center; background: transparent; position: relative;">
+      <section class="hero" id="home" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 20px 40px 20px; min-height: 100vh; justify-content: center; background: transparent; position: relative;">
         
         <figure class="hero-banner" style="margin-bottom: -110px; z-index: 2; position: relative;">
           <img src="./assets/images/me2.png" alt="Dr. Uchechukwu Efifie" class="w-100" style="max-width: 500px; width: 100%; height: auto; border-radius: 0; background: transparent; display: block;">
@@ -104,42 +104,60 @@
 
       </section>
 
-      <section class="stats" id="stats">
-        <ul class="stats-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+      <section class="stats" id="stats" style="padding: 40px 20px;">
+        
+        <style>
+          .responsive-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          @media (max-width: 500px) {
+            .responsive-stats-grid {
+              grid-template-columns: 1fr !important;
+              gap: 15px;
+            }
+          }
+        </style>
+
+        <ul class="responsive-stats-grid">
           <li>
-            <a href="#" class="stats-card">
-              <div class="card-icon">
+            <a href="#" class="stats-card" style="display: flex; align-items: center; gap: 15px; padding: 20px; text-decoration: none; height: 100%;">
+              <div class="card-icon" style="flex-shrink: 0;">
                 <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
               </div>
-              <h2 class="h2 card-title">13+ <strong>Years Public Health Exp.</strong></h2>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <h2 class="h2 card-title" style="margin: 0; font-size: 1.1rem; line-height: 1.4;">13+ <strong>Years Public Health Exp.</strong></h2>
+              <ion-icon name="chevron-forward-outline" style="margin-left: auto; flex-shrink: 0;"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="stats-card">
-              <div class="card-icon">
+            <a href="#" class="stats-card" style="display: flex; align-items: center; gap: 15px; padding: 20px; text-decoration: none; height: 100%;">
+              <div class="card-icon" style="flex-shrink: 0;">
                 <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
               </div>
-              <h2 class="h2 card-title">3+ <strong>Years Data Analysis Exp</strong></h2>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <h2 class="h2 card-title" style="margin: 0; font-size: 1.1rem; line-height: 1.4;">3+ <strong>Years Data Analysis Exp</strong></h2>
+              <ion-icon name="chevron-forward-outline" style="margin-left: auto; flex-shrink: 0;"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="stats-card">
-              <div class="card-icon">
+            <a href="#" class="stats-card" style="display: flex; align-items: center; gap: 15px; padding: 20px; text-decoration: none; height: 100%;">
+              <div class="card-icon" style="flex-shrink: 0;">
                 <img src="./assets/images/stats-card_icon-3.png" alt="DS Badge">
               </div>
-              <h2 class="h2 card-title">Master's <strong>Data Science Management</strong></h2>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <h2 class="h2 card-title" style="margin: 0; font-size: 1.1rem; line-height: 1.4;">Master's <strong>Data Science Management</strong></h2>
+              <ion-icon name="chevron-forward-outline" style="margin-left: auto; flex-shrink: 0;"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#" class="stats-card">
-              <div class="card-icon">
+            <a href="#" class="stats-card" style="display: flex; align-items: center; gap: 15px; padding: 20px; text-decoration: none; height: 100%;">
+              <div class="card-icon" style="flex-shrink: 0;">
                 <img src="./assets/images/stats-card_icon-3.png" alt="PMP Badge">
               </div>
-              <h2 class="h2 card-title">PMP <strong>Project Mgmt (Candidate)</strong></h2>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <h2 class="h2 card-title" style="margin: 0; font-size: 1.1rem; line-height: 1.4;">PMP <strong>Project Mgmt (Candidate)</strong></h2>
+              <ion-icon name="chevron-forward-outline" style="margin-left: auto; flex-shrink: 0;"></ion-icon>
             </a>
           </li>
         </ul>
